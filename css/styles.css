@@ -23,3 +23,127 @@ img {
 body {
   font-size: 1.6rem;
 }
+
+
+/* HEADER */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.navbar-items{
+  display: flex;
+  gap: 2rem;
+}
+.navbar a{
+  text-decoration: none;
+  color: #555555;
+  font-weight: bold;
+}
+.navbar li{
+  list-style: none;
+}
+
+
+.hero{
+  background-color: #000000;
+  padding: 2rem 4rem;
+}
+
+.hero h1{
+  color:  #ffffff
+}
+
+.hero h1 span{
+  color:  #c0392b;
+}
+.hero p{
+  color: #888888;
+}
+
+.btn{
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+}
+.btn-rojo{
+  background-color: #c0392b ;
+  text-decoration: none;
+  color: #ffffff;
+}
+/* Fin Header */
+
+
+/* FOOTER */
+footer{
+  background-color: #111111;
+  padding-bottom: 2rem;
+}
+
+.cont-sup{
+  display:flex;
+  justify-content: space-between;
+}
+.cont-sup h3, .cont-sup h4{
+  color: #ffffff;
+}
+.cont-sup p, .cont-sup li{
+  color: #888888;
+}
+.sin-deco{
+  list-style: none;
+  padding: 0;
+}
+
+.margen{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.contenido-inf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inferior{
+  color: #888888;
+}
+/* FIN FOOTER */
+
+/* menu */
+.menu{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu div{
+  border: solid #888888 1px;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.menu div img{
+  height: 20rem;
+}
+
+.menu div span{
+  color: #c0392b;
+  font-weight: bold;
+}
+.cont{
+  margin: 10rem;
+}
+/* FIN menu */
+
+
+
+/* Sobre nosotros */
+.nosotros{
+  display: flex;
+}
+.cuadros{
+  display: flex;
+}
+/* fin nosotro */
