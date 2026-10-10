@@ -19,13 +19,14 @@ img {
   max-width: 100%;
 }
 
-/* Tu código va aquí */
 body {
   font-size: 1.6rem;
 }
+/* Reset base */
 
 
-/* HEADER */
+
+/* Header */
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -75,6 +76,253 @@ body {
 /* Fin Header */
 
 
+
+/* Seccion menu */
+.menu {
+  padding: 4.8rem 4rem;
+}
+
+.tarjetas {
+  display: flex; /* Coloca en horizontal a los elementos */
+  gap: 2rem; /* genera un espacio de 20px o 2rem */
+}
+
+.tarjeta {
+  flex: 1; /* las 3 se reparten el ancho por igual: un tercio cada una */
+  border: 1px solid #e0ddd5; /* Borde visible */
+  border-radius: 1rem; /* redondea el borde */
+  overflow: hidden;   
+}
+
+.menu h2 {
+  color: #1a1a1a;
+  font-size: 2.6rem;
+  margin: 0 0 2.8rem 0;
+}
+
+.tarjeta img {
+  display: block;               
+  width: 100%;             
+  height: 20rem;       
+  object-fit: cover;    
+}
+
+.tarjeta-texto {
+  padding: 1.6rem;
+}
+
+.tarjeta-texto h3 {
+  color: #1a1a1a;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.descripcion {
+  color: #555555;
+  font-size: 1.4rem;
+  margin: 0 0 1rem 0;
+}
+
+.precio {
+  color: #c0392b;  
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+}
+/* Fin menu */
+
+
+
+/* Los más pedidos */
+.pedidos {
+  background-color: #f2f0eb;      
+  padding: 4.8rem 4rem;        
+  display: flex;         
+  justify-content: space-between; 
+}
+
+.pedidos-inicio {
+  width: 15%; 
+}
+
+.pedidos-inicio h2 {
+  color: #1a1a1a;
+  font-size: 2.6rem;
+  margin: 0 0 2.8rem 0; /* Significa: margen superior, derecho, inferior y izquierdo */
+}
+
+.pedidos-inicio p {
+  color: #555555;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.lista {
+  width: 65%;                     
+  list-style: none;               
+  margin: 0;
+  padding: 0;
+}
+
+.lista li {
+  display: flex;                 
+  align-items: center;             
+  padding: 1.2rem 0;              
+  border-bottom: 1px solid #e0ddd5;
+}
+
+.lista img {
+  width: 6rem;                  
+  height: 6rem;
+  border-radius: 0.8rem;          
+  object-fit: cover;               
+}
+
+.lista-nombre {
+  margin-left: 1.6rem;            
+}
+
+.lista-precio {
+  margin-left: auto;                /* empuja el precio al borde derecho */
+  color: #c0392b;           
+  font-size: 1.6rem;
+  font-weight: bold;             
+}
+/* Fin seccion pedidos */
+
+
+
+
+
+/* Seccion Nosotros */
+.nosotros {
+  padding: 4.8rem 4rem;       /* arriba, abajo - a los lados */
+  display: flex;                 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.nosotros-texto {
+  width: 45%;             
+}
+
+.nosotros-texto h2 { /* Estilo del h2 que esta dentro de la clase "nosotros texto" */
+  color: #1a1a1a;
+  font-size: 2.6rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.nosotros-texto p { /* Estilo del parrafo de la clase nosotros-texto */
+  color: #555555;
+  font-size: 1.6rem; /* tamaño */
+  margin: 0; /* sin margen (lo que esta fuera del borde) */
+}
+
+.cuadros {
+  width: 45%;      
+  display: flex;                   /* las 3 estadísticas en fila */
+  border: 1px solid #e0ddd5;       /* borde pequeño */
+  border-radius: 1rem;             /* esquinas redondeadas */
+}
+
+.estadistica {
+  flex: 1;                       /* Ocupan el mismo espacio de ancho */
+  padding: 2.4rem 1.6rem;          /* 24px arriba/abajo, 16px a los lados */
+  text-align: center;              /* texto centrado */
+}
+
+.estadistica span {
+  display: block;                  /* el número ocupa una linea entera a lo largo */
+  font-size: 2.4rem;               /* número grande */
+  font-weight: bold;            
+  color: #1a1a1a;
+}
+
+.estadistica small {
+  display: block;             
+  font-size: 1.2rem;
+  color: #555555;
+}
+/* Fin Nosotros */
+
+
+/* Seccion Contactos */
+.contacto {
+  background-color: #f2f0eb;        /* fondo gris claro */
+  padding: 4.8rem 4rem;             /* 48px arriba/abajo, 40px a los lados */
+  display: flex;                    /* información y formulario, uno al lado del otro */
+  justify-content: space-between;   /* el espacio sobrante queda entre ambos */
+  align-items: flex-start;          /* ambos alineados arriba, como en la imagen */
+}
+
+.contacto-info {
+  width: 40%;                   
+}
+
+.contacto-info h2 {
+  color: #1a1a1a;
+  font-size: 2.6rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.contacto-info p {
+  color: #555555;
+  font-size: 1.6rem;
+  margin: 0 0 1rem 0;
+}
+
+.contacto-info ul {
+  list-style: none;  /* quita los puntos */
+  margin: 0;
+  padding: 0;
+}
+
+.contacto-info li {
+  color: #555555;
+  font-size: 1.6rem;
+  margin-bottom: 1rem; /* 1rem entre cada dato */
+}
+
+.formulario {
+  width: 50%;   
+  background-color: #ffffff;
+  border: 1px solid #e0ddd5; /* Borde visible */
+  border-radius: 1rem; /* esquinas redondeadas */
+  padding: 2.4rem; /* espacio interior */
+}
+
+.formulario label {
+  display: block;                 
+  color: #555555;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;            /* pequeño espacio entre etiqueta y campo */
+}
+
+.formulario input, .formulario textarea {
+  display: block; /* cada campo en su propia línea */
+  width: 100%;  /* ocupa todo el ancho de la tarjeta */
+  border: 1px solid #e0ddd5; /* Borde visible */
+  border-radius: 0.6rem;
+  padding: 1rem; /* relleno interior */
+  margin-bottom: 1.6rem;   /* 1.6rem de separación hacia lo de abajo */
+  font-family: Arial, Helvetica, sans-serif; /* tipo de texto cuando uno escribe en los campos*/
+  font-size: 1.4rem;
+}
+
+.formulario button {
+  display: block;
+  width: 100%; /* el botón también ocupa todo el ancho */
+  background-color: #c0392b;      
+  color: #ffffff;
+  border: none; /* quita el borde por defecto del botón */
+  border-radius: 0.6rem;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  cursor: pointer; /* convierte en manito al pasar el mouse */
+}
+/* fin contactos */
+
+
 /* FOOTER */
 footer{
   background-color: #111111;
@@ -111,39 +359,3 @@ footer{
   color: #888888;
 }
 /* FIN FOOTER */
-
-/* menu */
-.menu{
-  display: flex;
-  justify-content: space-around;
-}
-
-.menu div{
-  border: solid #888888 1px;
-  border-radius: 1rem;
-  padding: 2rem;
-}
-
-.menu div img{
-  height: 20rem;
-}
-
-.menu div span{
-  color: #c0392b;
-  font-weight: bold;
-}
-.cont{
-  margin: 10rem;
-}
-/* FIN menu */
-
-
-
-/* Sobre nosotros */
-.nosotros{
-  display: flex;
-}
-.cuadros{
-  display: flex;
-}
-/* fin nosotro */
